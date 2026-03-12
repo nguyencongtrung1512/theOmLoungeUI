@@ -1,43 +1,43 @@
 export interface BaseService {
-  id: number;
-  name: string;
-  price: string;
+  id: number
+  name: string
+  price: string
 }
 
 export interface ServiceItem extends BaseService {
-  description: string;
+  description: string
 }
 
-export interface DrinkItem extends BaseService { }
+export type DrinkItem = BaseService
 
 export interface ServicesData {
-  combo: ServiceItem[];
-  medicure: ServiceItem[];
-  pedicure: ServiceItem[];
-  effect: ServiceItem[];
-  drink: DrinkItem[];
+  combo: ServiceItem[]
+  medicure: ServiceItem[]
+  pedicure: ServiceItem[]
+  effect: ServiceItem[]
+  drink: DrinkItem[]
 }
 
 export interface Testimonial {
-  id: number;
-  name: string;
-  avatar: string;
-  image: string;
-  text: string;
+  id: number
+  name: string
+  avatar: string
+  image: string
+  text: string
 }
 
 export interface Technician {
-  name: string;
-  avatar: string;
+  name: string
+  avatar: string
 }
 
 export interface CartItem {
-  id: string;
-  parentId?: string | null;
-  name: string;
-  price: number;
-  quantity: number;
-  image?: string;
-  duration?: number;
-  hasQuantityControl?: boolean;
+  id: string
+  parentId?: string | null
+  name: string
+  price: number
+  quantity: number
+  image?: string
+  duration?: number
+  hasQuantityControl?: boolean
 }

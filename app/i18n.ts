@@ -1,9 +1,9 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
+import i18n from 'i18next'
+import { initReactI18next } from 'react-i18next'
+import LanguageDetector from 'i18next-browser-languagedetector'
 
-import enCommon from './locales/en/common.json';
-import viCommon from './locales/vi/common.json';
+import enCommon from './locales/en/common.json'
+import viCommon from './locales/vi/common.json'
 
 i18n
   .use(LanguageDetector)
@@ -11,21 +11,21 @@ i18n
   .init({
     resources: {
       en: {
-        common: enCommon,
+        common: enCommon
       },
       vi: {
-        common: viCommon,
-      },
+        common: viCommon
+      }
     },
     fallbackLng: 'vi',
     defaultNS: 'common',
     interpolation: {
-      escapeValue: false, // react already safes from xss
+      escapeValue: false // react already safes from xss
     },
     detection: {
       order: ['querystring', 'cookie', 'localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
-      caches: ['localStorage', 'cookie'],
-    },
-  });
+      caches: ['localStorage', 'cookie']
+    }
+  })
 
-export default i18n;
+export default i18n

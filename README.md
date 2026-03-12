@@ -1,9 +1,5 @@
 # Welcome to React Router!
 
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
-
 ## Features
 
 - 🚀 Server-side rendering
@@ -41,6 +37,20 @@ Create a production build:
 ```bash
 npm run build
 ```
+
+# Preview construction results
+
+npm run preview
+
+# ESLint Check for ESLint errors & Auto fix ESLint errors
+
+npm run lint
+npm run lint:fix
+
+# Prettier
+
+npm run prettier
+npm run prettier:fix
 
 ## Deployment
 
